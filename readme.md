@@ -27,7 +27,7 @@
 
 ## HTML Tags - Any browser
 
-### <bytium-icon glyph="glyph-name" size="size-value" color="glyph-color"></bytium-icon>
+### `<bytium-icon glyph="glyph-name" size="size-value" color="glyph-color"></bytium-icon>`
 **Creates new system icon as a image tag**
 * glyph-name: glyph name from glyphs list under.
 * size-value: must be acceptable by CSS `width` and `height` property. Default size is 12px. Both width and hegith are euqal.
