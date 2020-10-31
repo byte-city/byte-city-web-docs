@@ -31,7 +31,7 @@
 **Creates new system icon as a image tag**
 * glyph-name: glyph name from glyphs list under.
 * size-value: must be acceptable by CSS `width` and `height` property. Default size is 12px. Both width and hegith are euqal.
-* glyph-color: muste be a hex-code color. Default color is black.
+* glyph-color: must be a hex-code color. Default color is black.
 
 ## Screen Elements
 
