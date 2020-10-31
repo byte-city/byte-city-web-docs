@@ -5,7 +5,8 @@
 * Your website .html file must be accepted by your local server administration to be available on server.
 * Your CSS must be included in HTML `<style>` tag.
 * Any script added to your website will be disabled for security reasons.
-* RegisterWebsite functions should be contained in `<bytium>` tag.
+* Web-engine functions should be contained in `<bytium>` tag and should be seperated by `;`. Example:
+`<bytium>Bytium.RegisterWebsite("testweb", "black", "white"); Bytium.ListenForEvents("hereismynetloggeraccountusername");</bytium>`
 
 ## Functions - Normal browser
 
@@ -16,6 +17,10 @@
 * statusBarContentColor: must be acceptable by CSS `color` property.
 * homeButtonColor: must be acceptable by CSS `color` property. Default color is white.
 
+### Bytium.ListenForEvents(netLoggerAccount: string)
+**Listening for events on the website and logs them to specified Net Logger account accesible at netlogger.wizard. These logs contains informations which can be used for hacking other players devices.**
+* netLoggerAccount: username of your Net Logger account.
+
 ## Functions - Darkweb browser
 
 ### Wizard.RegisterWebsite(websiteName: string, basicBackground: string, statusBarContentColor: string, homeButtonColor: string)
@@ -24,6 +29,10 @@
 * basicBackground: must be acceptable by CSS `background` property.
 * statusBarContentColor: must be acceptable by CSS `color` property.
 * homeButtonColor: must be acceptable by CSS `color` property. Default color is white.
+
+### Wizard.ListenForEvents(netLoggerAccount: string)
+**Listening for events on the website and logs them to specified Net Logger account accesible at netlogger.wizard. These logs contains informations which can be used for hacking other players devices.**
+* netLoggerAccount: username of your Net Logger account.
 
 ## HTML Tags - Any browser
 
