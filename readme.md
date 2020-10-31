@@ -24,3 +24,13 @@
 * basicBackground: must be acceptable by CSS `background` property.
 * statusBarContentColor: must be acceptable by CSS `color` property.
 * homeButtonColor: must be acceptable by CSS `color` property. Default color is white.
+
+## Screen Elements
+
+**Home Button**
+
+![Home Button](https://i.imgur.com/UMvKbJP.png)
+
+**Status Bar**
+
+![Status Bar](https://i.imgur.com/zLXBvTL.png)
