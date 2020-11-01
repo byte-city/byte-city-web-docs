@@ -5,6 +5,7 @@
 * Your website .html file must be accepted by your local server administration to be available on server.
 * Your CSS must be included in HTML `<style>` tag.
 * Any script added to your website will be disabled for security reasons.
+* Every `<meta>` tag should be placed in `<head>` tag.
 
 ## HTML Tags - Normal browser
 
@@ -36,21 +37,17 @@
 * size-value: must be acceptable by CSS `width` and `height` property. Default size is 12px. Both width and hegith are euqal.
 * glyph-color: must be a hex-code color. Default color is black.
 
-### `<meta name="title">This is your site title</meta>`
+### `<meta name="title" content="This is your site title"></meta>`
+**Sets site name which can make it easier to find using the search engine.**
 
-**THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site name which can make it easier to find using the search engine.**
+### `<meta name="description" content="This is your description"></meta>`
+**Sets site description which can make it easier to find using the search engine.**
 
-### `<meta name="description">This is your description</meta>`
+### `<meta name="keywords" content="This, is, your, keyword"></meta>`
+**Sets site keywords which can make it easier to find using the search engine.**
 
-**THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site description which can make it easier to find using the search engine.**
-
-### `<meta name="keywords">This, is, your, keyword</meta>`
-
-**THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site keywords which can make it easier to find using the search engine.**
-
-### `<meta name="icon" src="image.source"></meta>`
-
-**THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site icon which can make it easier to recognize while findin using the search engine.**
+### `<meta name="icon" content="image.source"></meta>`
+**Sets site icon which can make it easier to recognize while findin using the search engine.**
 
 ## Screen Elements
 
