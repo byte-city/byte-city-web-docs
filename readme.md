@@ -37,15 +37,19 @@
 * glyph-color: must be a hex-code color. Default color is black.
 
 ### `<meta name="title">This is your site title</meta>`
+
 **THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site name which can make it easier to find using the search engine.**
 
 ### `<meta name="description">This is your description</meta>`
+
 **THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site description which can make it easier to find using the search engine.**
 
 ### `<meta name="keywords">This, is, your, keyword</meta>`
+
 **THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site keywords which can make it easier to find using the search engine.**
 
 ### `<meta name="icon" src="image.source"></meta>`
+
 **THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site icon which can make it easier to recognize while findin using the search engine.**
 
 ## Screen Elements
