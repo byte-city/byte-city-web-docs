@@ -5,7 +5,7 @@
 * Your website .html file must be accepted by your local server administration to be available on server.
 * Your CSS must be included in HTML `<style>` tag.
 * Any script added to your website will be disabled for security reasons.
-* Every `<meta>` tag should be placed in `<head>` tag.
+* Every `<meta>` and byteOS function tag should be placed in `<head>` tag.
 
 ## HTML Tags - Normal browser
 
