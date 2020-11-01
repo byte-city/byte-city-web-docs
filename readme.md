@@ -15,10 +15,6 @@
 * statusBarContentColor: must be acceptable by CSS `color` property.
 * homeButtonColor: must be acceptable by CSS `color` property. Default color is white.
 
-### `<reigsterEventListener netLoggerAccount="username"></registerEventListener>`
-**Listening for events on the website and logs them to specified Net Logger account accesible at netlogger.wizard. These logs contains informations which can be used for hacking other players devices.**
-* netLoggerAccount: username of your Net Logger account.
-
 ## HTML Tags - Darkweb browser
 
 ### `<registerSite browser="Wizard" websiteName="value" basicBackground="value" statusBarContentColor="value" homeButtonColor="value"></registerSite>`
@@ -28,17 +24,29 @@
 * statusBarContentColor: must be acceptable by CSS `color` property.
 * homeButtonColor: must be acceptable by CSS `color` property. Default color is white.
 
+## HTML Tags - Any browser
+
 ### `<reigsterEventListener netLoggerAccount="username"></registerEventListener>`
 **Listening for events on the website and logs them to specified Net Logger account accesible at netlogger.wizard. These logs contains informations which can be used for hacking other players devices.**
 * netLoggerAccount: username of your Net Logger account.
 
-## HTML Tags - Any browser
-
 ### `<bytium-icon glyph="glyph-name" size="size-value" color="glyph-color"></bytium-icon>`
-**Creates new system icon as a image tag**
+**Creates new system icon as a image tag.**
 * glyph-name: glyph name from glyphs list under.
 * size-value: must be acceptable by CSS `width` and `height` property. Default size is 12px. Both width and hegith are euqal.
 * glyph-color: must be a hex-code color. Default color is black.
+
+### `<meta name="title">This is your site title</meta>`
+**THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site name which can make it easier to find using the search engine.**
+
+### `<meta name="description">This is your description</meta>`
+**THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site description which can make it easier to find using the search engine.**
+
+### `<meta name="keywords">This, is, your, keyword</meta>`
+**THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site keywords which can make it easier to find using the search engine.**
+
+### `<meta name="icon" src="image.source"></meta>`
+**THIS TAG SHOULD BE USED IN `<head>` TAG! Sets site icon which can make it easier to recognize while findin using the search engine.**
 
 ## Screen Elements
 
