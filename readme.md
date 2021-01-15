@@ -1,4 +1,4 @@
-# byte-city web-engine JavaScript docs
+# byte-city web-engine docs
 * You're able to test your website (html only) in-real time using in-game command `byteDevTools`.
 * Your website can't be hosted on any third-party websites or servers for security reasons.
 * Your website can't contain any content hosted on websites or servers different than imgur.com or byte-city.com for security reasons.
