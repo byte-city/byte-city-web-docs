@@ -1,63 +1,47 @@
 # byte-city web-engine docs
-* You're able to test your website (html only) in-real time using in-game command `byteDevTools`.
+* You're able to test your website in-real time using in-game command `byteDevTools`.
 * Your website can't be hosted on any third-party websites or servers for security reasons.
 * Your website can't contain any content hosted on websites or servers different than imgur.com or byte-city.com for security reasons.
-* Your website .html file must be accepted by your local server administration to be available on server.
-* Your CSS must be included in HTML `<style>` tag.
-* Any script added to your website will be disabled for security reasons.
-* Every `<meta>` and byteOS function tag should be placed in `<head>` tag.
+* Your website files must be accepted by your local server administration to be available on server.
+* Every website is available only on laptops and pc's in-game.
+* Every `<meta>` and byteOS function tag of your website should be placed in `<head>` tag.
 
 ## HTML Tags - Normal browser
 
-### `<registerSite browser="Bytium" websiteName="value" basicBackground="value" statusBarContentColor="value" homeButtonColor="value"></registerSite>`
-**Creates new website accessible through Bytium and Wizard app with search and link `websiteName.com`**
-* websiteName: should contain only alphabetical characters and dashes.
-* basicBackground: must be acceptable by CSS `background` property.
-* statusBarContentColor: must be acceptable by CSS `color` property.
-* homeButtonColor: must be acceptable by CSS `color` property. Default color is white.
+### `<registerSite browser="safari" websiteDomain="value"></registerSite>`
+**Creates new website accessible through Bytium and Wizard app with search and link `websiteDomain.com`**
+* websiteDomain: should contain only alphabetical characters and dashes.
 
 ## HTML Tags - Darkweb browser
 
-### `<registerSite browser="Wizard" websiteName="value" basicBackground="value" statusBarContentColor="value" homeButtonColor="value"></registerSite>`
-**Creates new website accessible through Wizard app with link `websiteName.wizard`**
-* websiteName: should contain only alphabetical characters and dashes.
-* basicBackground: must be acceptable by CSS `background` property.
-* statusBarContentColor: must be acceptable by CSS `color` property.
-* homeButtonColor: must be acceptable by CSS `color` property. Default color is white.
+### `<registerSite browser="wizard" websiteDomain="value"></registerSite>`
+**Creates new website accessible through Wizard app with link `websiteDomain.wizard`**
+* websiteDomain: should contain only alphabetical characters and dashes.
 
-## HTML Tags - Any browser
+## HTML Tags - Every browser
 
-### `<reigsterEventListener netLoggerAccount="username"></registerEventListener>`
-**Listening for events on the website and logs them to specified Net Logger account accesible at netlogger.wizard. These logs contains informations which can be used for hacking other players devices.**
-* netLoggerAccount: username of your Net Logger account.
+### `<reigsterEventListener netLoggerKey="value"></registerEventListener>`
+**Listening for events on the website and sends them to specified Net Logger account accesible at netlogger.wizard. These logs contains informations which can be used for hacking other players devices. This information is hidden from end user.**
+* netLoggerAccount: API key of your Net Logger account.
 
-### `<bytium-icon glyph="glyph-name" size="size-value" color="glyph-color"></bytium-icon>`
+### `<bytium-icon glyph="value" size="value" color="value" type="value"></bytium-icon>`
 **Creates new system icon as a image tag.**
-* glyph-name: glyph name from glyphs list under.
-* size-value: must be acceptable by CSS `width` and `height` property. Default size is 12px. Both width and hegith are euqal.
-* glyph-color: must be a hex-code color. Default color is black.
+* glyph: glyph name from glyphs list under.
+* size: must be acceptable by CSS `width` and `height` property. Default size is 12px.
+* color: must be a hex-code color. Default color is `black`.
+* type: must be `width` or `height`. Changing this to `height` is helpful when the glyph that you want to use have a little more height than width. Default type is `width`.
 
 ### `<meta name="title" content="This is your site title"></meta>`
-**Sets site name which can make it easier to find using the search engine.**
+**Sets site title which can make it easier to find using the search engine.**
 
 ### `<meta name="description" content="This is your description"></meta>`
 **Sets site description which can make it easier to find using the search engine.**
 
-### `<meta name="keywords" content="This, is, your, keyword"></meta>`
+### `<meta name="keywords" content="This, is, your, keywords"></meta>`
 **Sets site keywords which can make it easier to find using the search engine.**
 
-### `<meta name="icon" content="image.source"></meta>`
-**Sets site icon which can make it easier to recognize while findin using the search engine.**
-
-## Screen Elements
-
-**Home Button**
-
-![Home Button](https://i.imgur.com/UMvKbJP.png)
-
-**Status Bar**
-
-![Status Bar](https://i.imgur.com/zLXBvTL.png)
+### `<meta name="icon" src="value"></meta>`
+**Sets site icon which can make it easier to recognize while searching using the search engine.**
 
 ## Glyphs
 | Glyph | Name | Glyph | Name | Glyph | Name | Glyph | Name |
