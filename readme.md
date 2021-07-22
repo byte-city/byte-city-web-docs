@@ -31,13 +31,13 @@
 * color: must be a hex-code color. Default color is `black`.
 * type: must be `width` or `height`. Changing this to `height` is helpful when the glyph that you want to use have a little more height than width. Default type is `width`.
 
-### `<title></title>`
+### `<title>This is your title</title>`
 **Sets site title which can make it easier to find using the search engine.**
 
 ### `<meta name="description" content="This is your description">`
 **Sets site description which can make it easier to find using the search engine.**
 
-### `<meta name="keywords" content="This, is, your, keywords">`
+### `<meta name="keywords" content="This, is, your, keyword">`
 **Sets site keywords which can make it easier to find using the search engine.**
 
 ### `<meta name="icon" src="value">`
