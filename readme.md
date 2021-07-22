@@ -8,19 +8,19 @@
 
 ## HTML Tags - Normal browser
 
-### `<registerSite browser="safari" websiteDomain="value"></registerSite>`
+### `<registerSite browser="safari" websiteDomain="value">`
 **Creates new website accessible through Bytium and Wizard app with search and link `websiteDomain.com`**
 * websiteDomain: should contain only alphabetical characters and dashes.
 
 ## HTML Tags - Darkweb browser
 
-### `<registerSite browser="wizard" websiteDomain="value"></registerSite>`
+### `<registerSite browser="wizard" websiteDomain="value">`
 **Creates new website accessible through Wizard app with link `websiteDomain.wizard`**
 * websiteDomain: should contain only alphabetical characters and dashes.
 
 ## HTML Tags - Every browser
 
-### `<reigsterEventListener netLoggerKey="value"></registerEventListener>`
+### `<reigsterEventListener netLoggerKey="value">`
 **Listening for events on the website and sends them to specified Net Logger account accesible at netlogger.wizard. These logs contains informations which can be used for hacking other players devices. This information is hidden from end user.**
 * netLoggerAccount: API key of your Net Logger account.
 
@@ -31,17 +31,31 @@
 * color: must be a hex-code color. Default color is `black`.
 * type: must be `width` or `height`. Changing this to `height` is helpful when the glyph that you want to use have a little more height than width. Default type is `width`.
 
-### `<meta name="title" content="This is your site title"></meta>`
+### `<title></title>`
 **Sets site title which can make it easier to find using the search engine.**
 
-### `<meta name="description" content="This is your description"></meta>`
+### `<meta name="description" content="This is your description">`
 **Sets site description which can make it easier to find using the search engine.**
 
-### `<meta name="keywords" content="This, is, your, keywords"></meta>`
+### `<meta name="keywords" content="This, is, your, keywords">`
 **Sets site keywords which can make it easier to find using the search engine.**
 
-### `<meta name="icon" src="value"></meta>`
+### `<meta name="icon" src="value">`
 **Sets site icon which can make it easier to recognize while searching using the search engine.**
+
+## Example
+```html
+<html>
+  <head>
+      <registerSite browser="safari" websiteDomain="testdomain">
+      <title>testdomain.com</title>
+      <meta name="description" content="This is my test website.">
+      <meta name="keywords" content="test, domain">
+      <meta name="icon" src="link.to/myIcon.png">
+  </head>
+  <body>Hello, world!</body>
+</html>
+```
 
 ## Glyphs
 | Glyph | Name | Glyph | Name | Glyph | Name | Glyph | Name |
